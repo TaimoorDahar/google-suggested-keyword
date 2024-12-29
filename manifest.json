@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Google Keyword Copier",
+    "version": "1.0",
+    "description": "Copies Google suggested keywords with a button.",
+    "permissions": ["activeTab", "scripting", "clipboardWrite"],
+    "host_permissions": ["https://www.google.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
